@@ -23,6 +23,7 @@ public class mycode extends LinearOpMode {
         testservo = hardwareMap.get(Servo.class, "ServoName");
         testservo.setDirection(Servo.Direction.REVERSE);
 
+        //these are variables and can be named and used for whatever you wish
         double position = 0;
         double speed = 0;
 
@@ -47,7 +48,7 @@ public class mycode extends LinearOpMode {
     }
 
 
-    public void calcspeed(double power) {
+    public void calcspeed (double power) {
 
         double leftY = gamepad1.left_stick_y;
         double rightX = gamepad1.right_stick_x;
